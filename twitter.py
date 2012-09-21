@@ -51,6 +51,6 @@ def make_tweet(text):
 	request = urllib2.Request(base_url,post_data,headers)
 	try:
 		response = urllib2.urlopen(request)
+		return True
 	except:
 		return False
-	return True

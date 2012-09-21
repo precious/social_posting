@@ -38,6 +38,18 @@ facebook_keys_dict = {
 	'user_id': '',
 }
 
+########## Vk ##########
+# create standalone app here http://vk.com/editapp?act=create
+# go to http://api.vkontakte.ru/oauth/authorize?client_id=APP_ID&scope=wall,offline&redirect_uri=http://api.vkontakte.ru/blank.html&response_type=token
+# (dont forget to replace APP_ID with your own) and allow the required permissions. You should see page with 'Login success' words.
+# copy from browser's address bar access_token
+vk_keys_dict = {
+	'app_id': '',
+	'app_secure_key': '',
+	'user_id': '',
+	'access_token': '',
+}
+
 try:
 	from settings_local import *
 except ImportError:
